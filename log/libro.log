@@ -1,0 +1,55 @@
+
+SQL*Loader: Release 23.0.0.0.0 - for Oracle Cloud and Engineered Systems on Tue Apr 29 23:42:47 2025
+Version 23.7.0.25.01
+
+Copyright (c) 1982, 2025, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   ./ctl/libro.ctl
+Data File:      ./csv/libro.csv
+  Bad File:     ./bad/libro.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 1
+Errors allowed: 50
+Bind array:     250 rows, maximum of 1048576 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table LIBRO, loaded from every logical record.
+Insert option in effect for this table: INSERT
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+IDNUMERO                            FIRST     *   ,  O(") CHARACTER            
+ISBN                                 NEXT     *   ,  O(") CHARACTER            
+TITULO                               NEXT     *   ,  O(") CHARACTER            
+EDICION                              NEXT     *   ,  O(") CHARACTER            
+FECHAPUBLICACION                     NEXT     *   ,  O(") DATE YYYY-MM-DD      
+CATEGORIA                            NEXT     *   ,  O(") CHARACTER            
+EDITORIAL                            NEXT     *   ,  O(") CHARACTER            
+LITERATURA                           NEXT     *   ,  O(") CHARACTER            
+
+
+Table LIBRO:
+  50 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 516000 bytes(250 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          1
+Total logical records read:            50
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Tue Apr 29 23:42:47 2025
+Run ended on Tue Apr 29 23:42:53 2025
+
+Elapsed time was:     00:00:06.80
+CPU time was:         00:00:00.05

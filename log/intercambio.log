@@ -1,0 +1,89 @@
+
+SQL*Loader: Release 23.0.0.0.0 - for Oracle Cloud and Engineered Systems on Tue Apr 29 23:48:21 2025
+Version 23.7.0.25.01
+
+Copyright (c) 1982, 2025, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   ./ctl/intercambio.ctl
+Data File:      ./csv/intercambio.csv
+  Bad File:     ./bad/intercambio.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     250 rows, maximum of 1048576 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table INTERCAMBIO, loaded from every logical record.
+Insert option in effect for this table: INSERT
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+IDNUMERO                            FIRST     *   ,  O(") CHARACTER            
+TIPOINTERCAMBIO                      NEXT     *   ,  O(") CHARACTER            
+ESTADO                               NEXT     *   ,  O(") CHARACTER            
+USUARIO                              NEXT     *   ,  O(") CHARACTER            
+FECHA                                NEXT     *   ,  O(") DATE YYYY-MM-DD      
+FECHAINI                             NEXT     *   ,  O(") DATE YYYY-MM-DD      
+FECHAFIN                             NEXT     *   ,  O(") DATE YYYY-MM-DD      
+CANTDONADA                           NEXT     *   ,  O(") CHARACTER            
+PUNTUACIONDONACION                   NEXT     *   ,  O(") CHARACTER            
+
+Record 5: Rejected - Error on table INTERCAMBIO, column PUNTUACIONDONACION.
+Column not found before end of logical record (use TRAILING NULLCOLS)
+
+Record 6: Rejected - Error on table INTERCAMBIO, column PUNTUACIONDONACION.
+Column not found before end of logical record (use TRAILING NULLCOLS)
+
+Record 10: Rejected - Error on table INTERCAMBIO, column PUNTUACIONDONACION.
+Column not found before end of logical record (use TRAILING NULLCOLS)
+
+Record 11: Rejected - Error on table INTERCAMBIO, column PUNTUACIONDONACION.
+Column not found before end of logical record (use TRAILING NULLCOLS)
+
+Record 1: Rejected - Error on table INTERCAMBIO, column IDNUMERO.
+ORA-01722: unable to convert string value containing 'i' to a number: 
+ORA-03302: (ORA-01722 details) invalid string value: idNumero
+Help: https://docs.oracle.com/error-help/db/ora-01722/
+
+Record 3: Rejected - Error on table INTERCAMBIO.
+ORA-02290: check constraint (GRUPO1.SYS_C0013492) violated
+Help: https://docs.oracle.com/error-help/db/ora-02290/
+
+Record 4: Rejected - Error on table INTERCAMBIO.
+ORA-02290: check constraint (GRUPO1.SYS_C0013492) violated
+Help: https://docs.oracle.com/error-help/db/ora-02290/
+
+Record 8: Rejected - Error on table INTERCAMBIO.
+ORA-02290: check constraint (GRUPO1.SYS_C0013492) violated
+Help: https://docs.oracle.com/error-help/db/ora-02290/
+
+Record 9: Rejected - Error on table INTERCAMBIO.
+ORA-02290: check constraint (GRUPO1.SYS_C0013492) violated
+Help: https://docs.oracle.com/error-help/db/ora-02290/
+
+
+Table INTERCAMBIO:
+  22 Rows successfully loaded.
+  9 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 580500 bytes(250 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:            31
+Total logical records rejected:         9
+Total logical records discarded:        0
+
+Run began on Tue Apr 29 23:48:21 2025
+Run ended on Tue Apr 29 23:48:37 2025
+
+Elapsed time was:     00:00:16.31
+CPU time was:         00:00:00.05

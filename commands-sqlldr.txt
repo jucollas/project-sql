@@ -1,0 +1,16 @@
+sqlldr userid=GRUPO1/GRUPO1@//127.0.0.1:1521/FREEPDB1 control='./ctl/libro.ctl' data='./csv/libro.csv' bad='./bad/libro.bad' log='./log/libro.log'
+sqlldr userid=GRUPO1/GRUPO1@//127.0.0.1:1521/FREEPDB1 control='./ctl/intercambio.ctl' data='./csv/intercambio.csv' bad='./bad/intercambio.bad' log='./log/intercambio.log'
+sqlldr userid=GRUPO1/GRUPO1@//127.0.0.1:1521/FREEPDB1 control='./ctl/ejemplar.ctl' data='./csv/ejemplar.csv' bad='./bad/ejemplar.bad' log='./log/ejemplar.log'
+sqlldr userid=GRUPO1/GRUPO1@//127.0.0.1:1521/FREEPDB1 control='./ctl/donacionEjemplar.ctl' data='./csv/donacionEjemplar.csv' bad='./bad/donacionEjemplar.bad' log='./log/donacionEjemplar.log'
+
+
+sqlldr Grupo1/Grupo1@XE control="C:\Users\jsgar\OneDrive\Escritorio\UNIVERSIDAD\SEMESTRE 6\DATOS\proyecto\\usuario.ctl" log=usuario.log
+sqlldr Grupo1/Grupo1@XE control="C:\Users\jsgar\OneDrive\Escritorio\UNIVERSIDAD\SEMESTRE 6\DATOS\proyecto\\intercambio.ctl" log=intercambio.log
+sqlldr Grupo1/Grupo1@XE control="C:\Users\jsgar\OneDrive\Escritorio\UNIVERSIDAD\SEMESTRE 6\DATOS\proyecto\\ejemplar.ctl" log=ejemplar.log
+sqlldr Grupo1/Grupo1@XE control="C:\Users\jsgar\OneDrive\Escritorio\UNIVERSIDAD\SEMESTRE 6\DATOS\proyecto\\donacionEjemplar.ctl" log=donacionEjemplar.log
+sqlldr Grupo1/Grupo1@XE control="C:\Users\jsgar\OneDrive\Escritorio\UNIVERSIDAD\SEMESTRE 6\DATOS\proyecto\\categoria.ctl" log=categoria.log
+sqlldr Grupo1/Grupo1@XE control="C:\Users\jsgar\OneDrive\Escritorio\UNIVERSIDAD\SEMESTRE 6\DATOS\proyecto\\editorial.ctl" log=editorial.log
+sqlldr Grupo1/Grupo1@XE control="C:\Users\jsgar\OneDrive\Escritorio\UNIVERSIDAD\SEMESTRE 6\DATOS\proyecto\\literatura.ctl" log=literatura.log
+sqlldr Grupo1/Grupo1@XE control="C:\Users\jsgar\OneDrive\Escritorio\UNIVERSIDAD\SEMESTRE 6\DATOS\proyecto\\libro.ctl" log=libro.log
+
+

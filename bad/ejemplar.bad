@@ -1,0 +1,10 @@
+3,1003,fisico,Malo,0,./img/imagen3.jpg,20,3,2024-01-04,N,Intercambiado,20
+6,1006,fisico,Bueno,10,./img/imagen6.jpg,15,10,2024-01-07,S,Intercambiado,15
+11,1011,digital,Malo,6,./img/imagen11.jpg,17,8,2024-01-12,N,Disponible,17
+26,1026,digital,Excelente,6,./img/imagen26.jpg,13,4,2024-01-27,N,Prestado,13
+28,1028,fisico,Excelente,0,./img/imagen28.jpg,6,10,2024-01-29,N,Disponible,6
+32,1032,digital,Regular,10,./img/imagen32.jpg,19,3,2024-02-02,N,Prestado,19
+36,1036,fisico,Excelente,8,./img/imagen36.jpg,8,7,2024-02-06,N,Disponible,8
+38,1038,fisico,Regular,1,./img/imagen38.jpg,6,7,2024-02-08,N,Disponible,6
+45,1045,fisico,Excelente,3,./img/imagen45.jpg,5,9,2024-02-15,N,Intercambiado,5
+50,1050,digital,Bueno,6,./img/imagen50.jpg,11,5,2024-02-20,S,Disponible,11

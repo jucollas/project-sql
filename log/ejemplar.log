@@ -1,0 +1,103 @@
+
+SQL*Loader: Release 23.0.0.0.0 - for Oracle Cloud and Engineered Systems on Wed Apr 30 00:19:16 2025
+Version 23.7.0.25.01
+
+Copyright (c) 1982, 2025, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   ./ctl/ejemplar.ctl
+Data File:      ./csv/ejemplar.csv
+  Bad File:     ./bad/ejemplar.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 1
+Errors allowed: 50
+Bind array:     250 rows, maximum of 1048576 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table EJEMPLAR, loaded from every logical record.
+Insert option in effect for this table: INSERT
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+IDEJEMPLAR                          FIRST     *   ,  O(") CHARACTER            
+IDLIBRO                              NEXT     *   ,  O(") CHARACTER            
+TIPO                                 NEXT     *   ,  O(") CHARACTER            
+ESTADOFISICO                         NEXT     *   ,  O(") CHARACTER            
+PUNTUACION                           NEXT     *   ,  O(") CHARACTER            
+IMAGEN_NOMBRE                        NEXT   255   ,  O(") CHARACTER            
+  (FILLER FIELD)
+IMAGEN                            DERIVED     *  EOF      CHARACTER            
+    Dynamic LOBFILE.  Filename in field IMAGEN_NOMBRE
+USUARIO                              NEXT     *   ,  O(") CHARACTER            
+INTERCAMBIO                          NEXT     *   ,  O(") CHARACTER            
+FECHAADQUISICION                     NEXT     *   ,  O(") DATE YYYY-MM-DD      
+ACEPTADOBIBLIOTECA                   NEXT     *   ,  O(") CHARACTER            
+ESTADOBIBLIOTECA                     NEXT     *   ,  O(") CHARACTER            
+PROPIETARIOORIGINAL                  NEXT     *   ,  O(") CHARACTER            
+
+Record 3: Rejected - Error on table EJEMPLAR.
+ORA-02291: integrity constraint (GRUPO1.SYS_C0013506) violated - parent key not found
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+
+Record 6: Rejected - Error on table EJEMPLAR.
+ORA-02291: integrity constraint (GRUPO1.SYS_C0013506) violated - parent key not found
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+
+Record 11: Rejected - Error on table EJEMPLAR.
+ORA-02291: integrity constraint (GRUPO1.SYS_C0013506) violated - parent key not found
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+
+Record 26: Rejected - Error on table EJEMPLAR.
+ORA-02291: integrity constraint (GRUPO1.SYS_C0013506) violated - parent key not found
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+
+Record 28: Rejected - Error on table EJEMPLAR.
+ORA-02291: integrity constraint (GRUPO1.SYS_C0013506) violated - parent key not found
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+
+Record 32: Rejected - Error on table EJEMPLAR.
+ORA-02291: integrity constraint (GRUPO1.SYS_C0013506) violated - parent key not found
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+
+Record 36: Rejected - Error on table EJEMPLAR.
+ORA-02291: integrity constraint (GRUPO1.SYS_C0013506) violated - parent key not found
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+
+Record 38: Rejected - Error on table EJEMPLAR.
+ORA-02291: integrity constraint (GRUPO1.SYS_C0013506) violated - parent key not found
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+
+Record 45: Rejected - Error on table EJEMPLAR.
+ORA-02291: integrity constraint (GRUPO1.SYS_C0013506) violated - parent key not found
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+
+Record 50: Rejected - Error on table EJEMPLAR.
+ORA-02291: integrity constraint (GRUPO1.SYS_C0013506) violated - parent key not found
+Help: https://docs.oracle.com/error-help/db/ora-02291/
+
+
+Table EJEMPLAR:
+  40 Rows successfully loaded.
+  10 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 774000 bytes(250 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          1
+Total logical records read:            50
+Total logical records rejected:        10
+Total logical records discarded:        0
+
+Run began on Wed Apr 30 00:19:16 2025
+Run ended on Wed Apr 30 00:19:54 2025
+
+Elapsed time was:     00:00:38.73
+CPU time was:         00:00:00.08
